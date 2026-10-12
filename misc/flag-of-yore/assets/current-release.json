@@ -1,0 +1,34 @@
+{
+  "files": {
+    "assetIndex": {
+      "bytes": 436,
+      "path": "assets.idx",
+      "sha256": "335b3feb27968222599a76febf351b5e550f840ee2554550ade5402a57273b8d"
+    },
+    "datapack": {
+      "bytes": 1302,
+      "path": "pipworld2.dat",
+      "sha256": "fd524ea1d10f82096b9dd7d01a87d1807afc7bdad71cc15a8b9c5960815607c7"
+    },
+    "entry": {
+      "bytes": 44896,
+      "path": "pipworld2-client-490b8d797804be51.js",
+      "sha256": "dcf99af3142c19e5585ac58d6d6a48abef9c7dcc22f3971e03d93ed39a8afc6c"
+    },
+    "wasm": {
+      "bytes": 308205,
+      "path": "pipworld2-client-490b8d797804be51_bg.wasm",
+      "sha256": "3c807c4a6154bd4d6e8bcee2a944747be7c38e4f279396ad6389b1ab56f969da"
+    }
+  },
+  "release": {
+    "builtAt": "2026-09-15T11:08:11Z",
+    "dirty": true,
+    "hash": "cb5550c729d98d1371d074c0ba6397079ae5c107dfe6009c6dcffb71ff8c2aa7",
+    "id": "v0.1.1-cb5550c729d9-20260915T110811Z",
+    "revision": "3c9e63d0562cae58afe07e7ede991f7183a82dea",
+    "variant": "prod",
+    "version": "0.1.1"
+  },
+  "schemaVersion": 1
+}

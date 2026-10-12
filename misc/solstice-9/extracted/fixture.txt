@@ -1,0 +1,10 @@
+Revision 2 fixture assembly note
+Component order: controller journal, EEPROM, supervisor.
+EEPROM 24C02 address 50h: rev1 calibration at 20h; rev2 at 40h (32 bytes).
+Supervisor: 8 data bits, no parity, 1 stop. Packet = 55 aa, revision LE16,
+length U8, component bytes, CRC16/Modbus LE16 over preceding packet bytes.
+Use a valid packet for the PCB revision, not the last packet seen.
+The 96-byte fixture is a concatenation in component order. Lane routing is
+implemented by /usr/libexec/boarddiag, which prints the fixture public identity.
+Maintenance frames are handled by /usr/sbin/powerd. No network write, memory
+read, or command execution is implemented by the controller bridge.

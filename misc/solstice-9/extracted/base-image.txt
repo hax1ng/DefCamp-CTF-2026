@@ -1,0 +1,4 @@
+Original firmware: 2024-08-14-solar-assistant.rpi64.img
+SHA-256: a1c4c2f51db8821610f68124eb35ce2c89d8bf4d382fe4d8c491c26d92f434a3
+CTF additions are stored under /var/lib/powerd, /usr/share/board,
+/usr/libexec/boarddiag, /usr/sbin/powerd, and solstice9.service.

@@ -1,0 +1,7 @@
+SOLSTICE 9 — bench intake 009
+Controller PCB marking: 5319 / revision 0002.
+An SD-card service image and two logic-analyzer exports were recovered.
+Capture 01: two probes on the eight-pin serial EEPROM; voltage 3.3 V.
+Capture 02: two probes on the supervisor header; a transistor sits between
+the MCU TX pin and the test point. Times are nanoseconds; rows are edges.
+No physical board is needed. The archived captures are stored in the service image.

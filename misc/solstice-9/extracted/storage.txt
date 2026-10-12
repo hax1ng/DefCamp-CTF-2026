@@ -1,0 +1,12 @@
+Controller storage service note, rev 9
+SPI export: 4096 physical pages, 256 data bytes plus 16 spare bytes per page.
+Spare, little endian: magic[2], kind:u8, flags:u8, generation:u16,
+length:u16, board_revision:u32, crc32:u32. CRC is standard reflected CRC32
+over spare[0:12] followed by all 256 DEWHITENED data bytes.
+Only flags bit 0 commits a page. Kinds 31h and 32h are a paired 16+16 byte
+fixture component. Both must match the board/revision and generation.
+Generation is a wrapping 16-bit counter: forward deltas below 8000h are newer.
+Whitening resets each physical page: x = 9e3779b9h XOR page_index (zero based).
+For EACH data byte: x ^= x<<13; x ^= x>>17; x ^= x<<5; XOR with low byte of x.
+Each x operation is unsigned 32-bit; spare bytes are not whitened.
+Retired, torn, and uncommitted records remain in field-service dumps.

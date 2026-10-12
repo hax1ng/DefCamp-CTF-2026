@@ -1,0 +1,32 @@
+# Local Python/tool output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.log
+*.out
+*.pid
+
+# Local configuration and sensitive material
+.env
+.env.*
+*.pem
+*.key
+id_*
+*cookies*
+*token*
+*.core
+
+# Large disk/VM images and generated analysis
+*.img
+*.vdi
+*.vbox
+*.ova
+*.iso
+fs_listing.txt
+fls-all.txt
+
+# solstice-9 derived private key and fixture (rebuild locally)
+misc/solstice-9/extracted/seed.bin
+misc/solstice-9/extracted/fixture.bin

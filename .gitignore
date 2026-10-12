@@ -17,6 +17,10 @@ id_*
 *cookies*
 *token*
 *.core
+*.zip
+*.jpg
+*.jpeg
+*.png
 
 # Large disk/VM images and generated analysis
 *.img

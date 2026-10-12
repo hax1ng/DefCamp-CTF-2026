@@ -220,7 +220,7 @@ The capitalization matters: the first `N` and the `T` in `m3Ta` are uppercase.
 
 Immediately after drawing these characters, the renderer draws a large opaque rectangle and writes `WALL` over it. That is why a normal player cannot read the characters even when sailing to the correct location—the browser paints the answer and then covers it.
 
-![The wall covering the hidden text](assets/wall.png)
+*Archive note: the wall screenshot was removed during storage cleanup; the intercepted characters and positions are preserved above.*
 
 This also explains why recording `fillText` was more useful than taking screenshots. A screenshot only contains the final painted frame, after the wall has covered the answer. The hook records the drawing operations in the order they happen.
 
@@ -269,4 +269,4 @@ DCTF{W4llh4ck1N6_1s_s0_m3Ta}
 
 ## Reproduction and files
 
-Run [`canvas_hook.js`](canvas_hook.js) in the browser console before joining the game. After joining, call `expandViewport()` and inspect `hiddenText()`; the hook records draw calls before the wall covers the lettering. The screenshot in `assets/wall.png` illustrates the occlusion. The hook is specific to the challenge game and is not a general-purpose browser exploit.
+Run [`canvas_hook.js`](canvas_hook.js) in the browser console before joining the game. After joining, call `expandViewport()` and inspect `hiddenText()`; the hook records draw calls before the wall covers the lettering. The intercepted draw calls document the occlusion; the screenshot was omitted for storage. The hook is specific to the challenge game and is not a general-purpose browser exploit.

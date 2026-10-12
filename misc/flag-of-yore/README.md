@@ -149,7 +149,7 @@ for i, name in enumerate(names):
 
 The last extracted file was the important one:
 
-![Development tutorial screenshot](assets/dev_tutorial.png)
+*Archive note: the extracted screenshot was removed during storage cleanup; the leaked release ID is transcribed below.*
 
 ## Step 3: Reading the leaked historical release ID
 
@@ -294,4 +294,4 @@ DCTF{M4yb3_cl34n_y0ur_S3_buCk375_fr0m_t1m3_t0_71m3}
 
 ## Reproduction and files
 
-[`extract_tutorial.py`](extract_tutorial.py) extracts the development screenshot from the public `tutorial.pak` referenced above (Pillow required). The key small artifacts are preserved in `assets/`: redacted copies of the current and historical release manifests (game-server URLs removed), the historical asset index, screenshot, and 76-byte `dev.pak`. The multi-megabyte production pack is omitted; the writeup records its download path.
+[`extract_tutorial.py`](extract_tutorial.py) extracts the development screenshot from the public `tutorial.pak` referenced above (Pillow required). The key small artifacts are preserved in `assets/`: redacted copies of the current and historical release manifests (game-server URLs removed), the historical asset index and 76-byte `dev.pak`. The screenshot is omitted under the archive cleanup policy. The multi-megabyte production pack is omitted; the writeup records its download path.

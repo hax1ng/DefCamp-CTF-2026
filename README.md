@@ -13,6 +13,6 @@ Selected solutions from the **DCTF26 Qualifiers**, held September 18–20, 2026.
 
 The first two solves explore different weaknesses in a browser-based pirate game: client-side rendering reveals supposedly hidden text, while a production screenshot discloses the identifier of an older release. The third reconstructs a controller identity from SPI, I²C, and UART captures recovered from a firmware image.
 
-Only challenges with documented `DCTF{...}` flags are included. Large source images, transient logs, team-instance addresses, generated keys, and unrelated experiments are intentionally omitted. Each challenge directory contains its writeup and the small scripts or evidence needed to follow the solve. Run any network-facing script **only** against an instance assigned to your team.
+Only challenges with documented `DCTF{...}` flags are included. Large source images, transient logs, team-instance addresses, generated keys, and unrelated experiments are intentionally omitted. Each challenge directory contains its writeup and the small scripts or text-based evidence needed to follow the solve. Screenshots were removed for long-term storage; their relevant observations remain transcribed in the writeups. Run any network-facing script **only** against an instance assigned to your team.
 
 Python helpers use the standard library plus `Pillow` and `cryptography`; install the optional dependencies with `python3 -m pip install -r requirements.txt`.
